@@ -31,20 +31,20 @@ const AuthProvider = ({ children }) => {
     localStorage.removeItem("token");
   };
 
-  // useEffect(() => {
-  //   const token = localStorage.getItem("token");
+  useEffect(() => {
+    const token = localStorage.getItem("token");
 
-  //   if (token) {
-  //     alert("has token");
-  //     navigate("/");
-  //     apiReq
-  //       .get("/users/get-user", { headers: { 'Cookie' : `access_token=${token}` } })
-  //       .then((data) => {
-  //         setIsLoggedin(true)
-  //         console.log(data.data);
-  //       });
-  //   }
-  // }, []);
+    if (token) {
+      alert("has token");
+      navigate("/");
+      apiReq
+        .get("/users/get-user", { headers: { 'Cookie' : `access_token=${token}` } })
+        .then((data) => {
+          setIsLoggedin(true)
+          console.log(data.data);
+        });
+    }
+  }, []);
 
   return (
     <AuthContext.Provider
