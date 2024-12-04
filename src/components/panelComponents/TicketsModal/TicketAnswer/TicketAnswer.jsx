@@ -16,8 +16,7 @@ export default function TicketAnswer() {
       <div className="flex items-center justify-start gap-3 font-Kalame">
         <button
           onClick={() => ticketModal.closeTicketModal()}
-          className="p-3 bg-red-500 text-white w-[35%] sm:w-[25%] xl:w-[15%] rounded-lg"
-        >
+          className="p-3 bg-red-500 text-white w-[35%] sm:w-[25%] xl:w-[15%] rounded-lg">
           بیخیال
         </button>
         <button className="p-3 bg-green-500 text-white w-[35%] sm:w-[25%] xl:w-[15%] rounded-lg">
