@@ -7,7 +7,7 @@ export default function TicketAnswer() {
 
   return (
     <>
-     <div className="flex flex-col p-2 gap-2">
+      <div className="flex flex-col p-2 gap-2">
         <textarea
           className="resize-none border dark:bg-[#111827] mb-4 border-gray-300 p-2 rounded-lg w-full transition-all duration-200 focus:border-primary outline-none h-[7rem] font-Kalame"
           placeholder="متن پاسخ"
