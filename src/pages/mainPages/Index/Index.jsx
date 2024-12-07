@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Header from "../../../components/sharedComponents/Header/Header";
 import Footer from "../../../components/sharedComponents/Footer/Footer";
 import CategoryBox from '../../../components/indexComponents/CategoryBox/CategoryBox'
@@ -11,13 +11,13 @@ import Articles from '../../../components/indexComponents/Articles/Articles'
 import DiscountCarts from '../../../components/indexComponents/DiscountCarts/DiscountCarts'
 import Banner from "../../../components/indexComponents/Banner/Banner"
 import { AuthContext } from '@/context/AuthContext/AuthContext';
+import useDocumentTitle from '@/hooks/useDocumentTitle';
 
 export default function Index() {
 
   const auth = useContext(AuthContext);
-
-  console.log(auth.isLoggedIn);
-  console.log(auth.token);
+  
+  useDocumentTitle("تکنوآرا | صفحه اصلی")
 
   return (
     <>
