@@ -7,8 +7,7 @@ import 'swiper/css/pagination';
 export default function Banner() {
   return (
     <div className="w-[100%] h-[11rem] mt-[10rem] xs:h-[15rem] xs:mt-[6rem] sm:h-[20rem] lg:h-[30rem] lg:mt-0">
-      <Swiper 
-        className="h-[100%]"
+      <Swiper className="h-[100%]"
         spaceBetween={50}
         slidesPerView={1}
         modules={[Pagination , Autoplay]}
