@@ -6,10 +6,10 @@ export default function Questions() {
 
   return (
     <div className='w-[98%] animate-showTab rounded-lg mt-10 mx-auto p-8 bg-white'>
-      <div className='flex items-center justify-between border-b-2 pb-5'>
+       <div className='flex items-center justify-between border-b-2 pb-5'>
         <h4 className='font-YekanBakh text-[1.4rem] text-[#0650A3]'>پرسش پاسخ</h4>
         <p className='font-Kalame text-[#02195973]'>پرسش پاسخ 1</p>
-      </div>
+       </div>
       <div className={`mt-10 transition-all duration-200 ${isOpenQuestionBox ? "h-[550px] xs:h-[470px] sm:h-[320px] md:h-[250px] lg:h-[230px] xl:h-[200px]" : "h-[3rem] xs:h-[2rem] overflow-hidden"}`}>
         <div className='flex items-center gap-2 justify-start cursor-pointer' onClick={() => setIsOpenQustionBox(prev => !prev)}>
            <span className='bg-[#0650A3] w-5 h-1'></span>
