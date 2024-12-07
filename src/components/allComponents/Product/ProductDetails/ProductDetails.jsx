@@ -1,7 +1,6 @@
 import React , {memo} from 'react'
 
 const ProductDetails = memo(() => {
-    console.log("product details render");
     return (
       <div className='w-full lg:w-[55%] mt-[3rem] lg:mt-0 flex flex-col gap-8'>
          <h4 className='font-YekanBakh text-[#021959] text-[1rem] xs:text-[1.2rem] font-bold'>گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو</h4>
