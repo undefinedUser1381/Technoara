@@ -16,7 +16,6 @@ import useDocumentTitle from '@/hooks/useDocumentTitle';
 export default function Index() {
 
   const auth = useContext(AuthContext);
-  
   useDocumentTitle("تکنوآرا | صفحه اصلی")
 
   return (
