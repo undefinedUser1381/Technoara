@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Pagination , Autoplay} from "swiper/modules"
-import banner1 from "/public/images/banner/newSlider2-1.jpg"
-import banner2 from "/public/images/banner/newSlider3-1.jpg"
-import banner3 from "/public/images/banner/newSlider4-1.jpg"
+import BannerBan1 from "/public/images/banner/newSlider2-1.jpg"
+import BannerBan2 from "/public/images/banner/newSlider3-1.jpg"
+import BannerBan3 from "/public/images/banner/newSlider4-1.jpg"
 import "swiper/css";
 import 'swiper/css/pagination';
 
@@ -23,7 +23,7 @@ export default function Banner() {
         <SwiperSlide className="h-[100%]">
           <div className="h-[100%] overflow-hidden rounded-xl">
             <img
-              src={banner1}
+              src={BannerBan1}
               className="w-[100%] h-[100%]"
               alt=""
             />
@@ -32,7 +32,7 @@ export default function Banner() {
         <SwiperSlide className="h-[100%]">
           <div className="overflow-hidden h-[100%] rounded-xl">
             <img
-              src={banner2}
+              src={BannerBan2}
               className="w-[100%] h-[100%]"
               alt=""
             />
@@ -41,7 +41,7 @@ export default function Banner() {
         <SwiperSlide className="h-[100%]">
           <div className="overflow-hidden h-[100%] rounded-xl">
             <img
-              src={banner3}
+              src={BannerBan3}
               className="w-[100%] h-[100%]"
               alt=""
             />
