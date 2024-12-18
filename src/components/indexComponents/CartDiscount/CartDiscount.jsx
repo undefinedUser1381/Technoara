@@ -1,5 +1,5 @@
 import React from 'react'
-import cartDiscountImg from "/public/images/discountproducts/1-1.png"
+import CartDiscountImg from "/images/discountproducts/1-1.png"
 
 export default function CartDiscount() {
   return (
@@ -10,7 +10,7 @@ export default function CartDiscount() {
        <div className='w-[100%] relative h-[100%]'>
         <img src="/images/back-amazing.png" className='h-[100%] w-[100%]' alt="" />
         <div className='w-[45%] h-[45%] absolute top-[40%] right-[30%] sm:right-[30%] sm:h-[45%] sm:w-[45%] xl:w-[45%] xl:h-[50%]'>
-          <img src={cartDiscountImg} className='w-[100%] h-[100%]' alt="" />
+          <img src={CartDiscountImg} className='w-[100%] h-[100%]' alt="" />
         </div>
         <div className='bg-[#F04055] absolute w-10 h-8 top-[40%] left-[25%] sm:top-[45%] sm:left-[30%] md:w-16 md:h-12 lg:w-14 lg:h-10 lg:top-[45%] p-3 xl:p-2 xl:top-[35%] xl:left-[20%] xl:w-10 xl:h-8 flex shadow-xl items-center justify-center rounded-r-[25%]'>
             <p className='font-Kalame text-white'>%67</p>
