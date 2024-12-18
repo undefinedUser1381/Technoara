@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Pagination , Autoplay} from "swiper/modules"
-import banner1 from "../../../../public/images/banner/newSlider2-1.jpg"
-import banner2 from "../../../../public/images/banner/newSlider3-1.jpg"
-import banner3 from "../../../../public/images/banner/newSlider4-1.jpg"
+import banner1 from "/public/images/banner/newSlider2-1.jpg"
+import banner2 from "/public/images/banner/newSlider3-1.jpg"
+import banner3 from "/public/images/banner/newSlider4-1.jpg"
 import "swiper/css";
 import 'swiper/css/pagination';
 
