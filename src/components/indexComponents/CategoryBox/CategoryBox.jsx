@@ -20,7 +20,7 @@ export default function CategoryBox() {
         <div className="overflow-hidden rounded-3xl h-[100%]">
           <img
             className="w-full h-full"
-            src="../../..//images/category-box/cat6.jpg"
+            src="images/category-box/cat6.jpg"
             alt=""
           />
         </div>
@@ -31,7 +31,7 @@ export default function CategoryBox() {
         <div className="overflow-hidden rounded-3xl h-[100%]">
           <img
             className="w-full h-full"
-            src="../../..//images/category-box/headphone.jpg"
+            src="images/category-box/headphone.jpg"
             alt=""
           />
         </div>
