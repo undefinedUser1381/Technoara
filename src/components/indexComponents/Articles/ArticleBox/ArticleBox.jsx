@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ArticleSrc from "/public/images/articles/3-11.jpg"
 
 export default function ArticleBox() {
   return (
     <div className='w-full flex flex-col md:flex-row items-start justify-start md:justify-between h-auto gap-4 border-b-2 pb-[1.5rem]'>
        <div className='w-[65%] xs:w-[55%] sm:w-[45%] relative mx-auto md:mx-0 h-[7rem] md:h-[100%] rounded-2xl overflow-hidden'>
-         <img src="/images/articles/3-11.jpg" alt="" className='w-[100%] h-[100%]'/>
+         <img src={ArticleSrc} alt="" className='w-[100%] h-[100%]'/>
            <div className='absolute bottom-1 right-2 text-white text-[0.8rem] flex items-center justify-center gap-1'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
