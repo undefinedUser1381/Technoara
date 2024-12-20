@@ -1,6 +1,7 @@
 import React from 'react'
 import TitleBox from '../TitleBox/TitleBox'
 import ArticleBox from './ArticleBox/ArticleBox'
+import ArticleSrc from "/public/images/articles/3-11.jpg"
 
 export default function Articles() {
 
@@ -10,7 +11,7 @@ export default function Articles() {
        <div className='flex flex-col lg:flex-row items-center h-auto lg:h-[27rem] justify-center gap-6 mt-10'>
           <div className='w-full lg:w-[55%] lg:mt-[5rem] xl:mt-0 relative h-[23rem] lg:h-[100%]'>
            <div className='w-[100%] h-[100%] overflow-hidden rounded-2xl'>
-            <img src="images/articles/3-11.jpg" className='w-full h-full' alt="" />
+            <img src={ArticleSrc} className='w-full h-full' alt="" />
            </div>
            <div className='absolute flex flex-col gap-7 justify-end pb-9 pr-5 article-box__bg left-0 top-0 right-0 rounded-2xl bottom-0 bg-[rgba(0,0,0,0.4)]'>
                <div className='flex flex-col'>
