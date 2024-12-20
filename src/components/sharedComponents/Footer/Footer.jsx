@@ -56,7 +56,7 @@ const Footer = memo(() => {
           </div>
          </div>
          <div className='w-full lg:w-[56%] flex flex-wrap gap-5 mt-2 md:mt-10 items-center justify-between shadow-lg p-5'>
-            <FooterFeatures title={"پتل"} src={FooterSrc1}/>
+            <FooterFeatures title={"پنل"} src={FooterSrc1}/>
             <FooterFeatures title={"پشتیبانی"} src={FooterSrc2}/>
             <FooterFeatures title={"ثبت"} src={FooterSrc3}/>
             <FooterFeatures title={"اعلانات"} src={FooterSrc4}/>
