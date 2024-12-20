@@ -3,6 +3,7 @@ import TitleBox from "../TitleBox/TitleBox"
 import ProductsWithDiscount from '../../sharedComponents/ProductsWithDiscount/ProductsWithDiscount'
 import ProductsWithNoDiscounts from '../../sharedComponents/ProductsWithNoDiscounts/ProductsWithNoDiscounts'
 import {Swiper,SwiperSlide} from "swiper/react";
+import LapTopSrc from "/public/images/mobile/cat4.jpg"
 import { Autoplay } from 'swiper/modules';
 import "swiper/css"
 
@@ -13,7 +14,7 @@ export default function LapTop() {
       <div className='flex flex-col lg:flex-row-reverse items-center lg:mt-2 xl:mt-16 justify-between w-[100%] h-full'>
        <div className='w-full hidden lg:block lg:w-[20%] xl:w-[25%] h-[40rem] lg:h-[38rem] xl:h-[33rem] rounded-3xl overflow-hidden shadow-[#492AB6] shadow-xl'>
          <div className='w-[100%] h-[100%]'>
-            <img src="/images/mobile/cat4.jpg" className='w-[100%] h-[100%]' alt="" />
+            <img src={LapTopSrc} className='w-[100%] h-[100%]' alt="" />
          </div>
        </div>
        <div className='w-[100%] h-[33rem] sm:h-[40rem] lg:h-[auto] xl:w-[70%] mx-auto flex items-center justify-between'>
