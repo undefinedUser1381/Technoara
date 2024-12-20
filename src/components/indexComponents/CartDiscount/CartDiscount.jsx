@@ -1,5 +1,5 @@
 import React from 'react'
-import CartDiscountImg from "/images/discountproducts/1-1.png"
+import CartDiscountImg from "/public/images/discountproducts/1-1.png"
 
 export default function CartDiscount() {
   return (
