@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Cat1Src from "/public/images/category-box/cat3-1.jpg"
+import Cat2Src from "/public/images/category-box/cat6.jpg"
+import Cat3Src from "/public/images/category-box/headphone.jpg"
 
 export default function CategoryBox() {
   return (
@@ -9,7 +12,7 @@ export default function CategoryBox() {
         <div className="overflow-hidden rounded-3xl h-[100%]">
           <img
             className="w-full h-full"
-            src="images/category-box/cat3-1.jpg"
+            src={Cat1Src}
             alt=""
           />
         </div>
@@ -20,7 +23,7 @@ export default function CategoryBox() {
         <div className="overflow-hidden rounded-3xl h-[100%]">
           <img
             className="w-full h-full"
-            src="images/category-box/cat6.jpg"
+            src={Cat2Src}
             alt=""
           />
         </div>
@@ -31,7 +34,7 @@ export default function CategoryBox() {
         <div className="overflow-hidden rounded-3xl h-[100%]">
           <img
             className="w-full h-full"
-            src="images/category-box/headphone.jpg"
+            src={Cat3Src}
             alt=""
           />
         </div>
