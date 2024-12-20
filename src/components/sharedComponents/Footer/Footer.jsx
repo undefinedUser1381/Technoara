@@ -1,6 +1,17 @@
 import React from 'react'
 import { memo } from 'react'
 import FooterFeatures from './FooterFeatures/FooterFeatures'
+import FooterSrc1 from "/public/images/features/1-4.png"
+import FooterSrc2 from "/public/images/features/2-4.png"
+import FooterSrc3 from "/public/images/features/3-3.png"
+import FooterSrc4 from "/public/images/features/4-3.png"
+import FooterSrc5 from "/public/images/features/5-3.png"
+import FooterSrc6 from "/public/images/features/6-3.png"
+import FooterSrc7 from "/public/images/features/7-1.png"
+import FooterSrc8 from "/public/images/features/8.png"
+import FooterSrc9 from "/public/images/kasbokar-1.webp"
+import FooterSrc10 from "/public/images/rezi-1.webp"
+import FooterSrc11 from "/public/images/logo.png"
 
 const Footer = memo(() => {
   console.log("Footer");
@@ -45,14 +56,14 @@ const Footer = memo(() => {
           </div>
          </div>
          <div className='w-full lg:w-[56%] flex flex-wrap gap-5 mt-2 md:mt-10 items-center justify-between shadow-lg p-5'>
-            <FooterFeatures title={"پتل"} src={"/images/features/1-4.png"}/>
-            <FooterFeatures title={"پشتیبانی"} src={"/images/features/2-4.png"}/>
-            <FooterFeatures title={"ثبت"} src={"/images/features/3-3.png"}/>
-            <FooterFeatures title={"اعلانات"} src={"/images/features/4-3.png"}/>
-            <FooterFeatures title={"خبرنامه"} src={"/images/features/5-3.png"}/>
-            <FooterFeatures title={"امنیت"} src={"/images/features/6-3.png"}/>
-            <FooterFeatures title={"سبد خرید"} src={"/images/features/7-1.png"}/>
-            <FooterFeatures title={"پرداخت"} src={"/images/features/8.png"}/>
+            <FooterFeatures title={"پتل"} src={FooterSrc1}/>
+            <FooterFeatures title={"پشتیبانی"} src={FooterSrc2}/>
+            <FooterFeatures title={"ثبت"} src={FooterSrc3}/>
+            <FooterFeatures title={"اعلانات"} src={FooterSrc4}/>
+            <FooterFeatures title={"خبرنامه"} src={FooterSrc5}/>
+            <FooterFeatures title={"امنیت"} src={FooterSrc6}/>
+            <FooterFeatures title={"سبد خرید"} src={FooterSrc7}/>
+            <FooterFeatures title={"پرداخت"} src={FooterSrc8}/>
         </div>
       </div>
       <div className='flex gap-10 flex-col-reverse lg:flex-row items-center border-b pb-5 mt-14 justify-between'>
@@ -67,13 +78,13 @@ const Footer = memo(() => {
           </div>
           <div className='w-[65%] lg:w-[20%] flex items-center justify-between'>
               <div className='w-[5rem] h-[5rem]'>
-               <img src="/images/logo.png" className='w-[100%] h-[100%]' alt="" />
+               <img src={FooterSrc9} className='w-[100%] h-[100%]' alt="" />
               </div>
               <div className='w-[5rem] h-[6rem]'>
-               <img src="/images/kasbokar-1.webp" className='w-[100%] h-[100%]' alt="image" />
+               <img src={FooterSrc10} className='w-[100%] h-[100%]' alt="image" />
               </div>
               <div className='w-[5rem] h-[5rem]'>
-               <img src="/images/rezi-1.webp" className='w-[100%] h-[100%]' alt="" />
+               <img src={FooterSrc11} className='w-[100%] h-[100%]' alt="" />
              </div>
           </div>
       </div>
