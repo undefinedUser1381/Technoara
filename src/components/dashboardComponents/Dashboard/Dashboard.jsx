@@ -1,4 +1,5 @@
 import React from 'react'
+import DashboardSrc from "/public/images/products/1-10.jpg"
 
 export default function Dashboard() {
 
@@ -62,13 +63,13 @@ export default function Dashboard() {
           <div className='p-5 border mt-5 rounded-xl'>
              <div className='flex items-center justify-start gap-6'>
                 <div className='w-10 h-10'>
-                   <img src="/images/products/1.jpg" className='w-full h-full' alt="" />
+                   <img src={DashboardSrc} className='w-full h-full' alt="" />
                 </div>
                 <p>فلان فلان محصول فلان آپشن فلان فلانی</p>
              </div>
              <div className='flex items-center mt-5 justify-start gap-6'>
                 <div className='w-10 h-10'>
-                   <img src="/images/products/1.jpg" className='w-full h-full' alt="" />
+                   <img src={DashboardSrc} className='w-full h-full' alt="" />
                 </div>
                 <p>فلان فلان محصول فلان آپشن فلان فلانی</p>
              </div>
