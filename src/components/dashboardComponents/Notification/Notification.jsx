@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Notification() {
   return (
-   <div className='p-5 shadow-sm rounded-lg w-[73%] bg-white'>
+   <div className='p-5 shadow-sm rounded-lg w-full sm:w-[73%] bg-white'>
     <div className='flex text-[#021959] py-5 border-b items-center justify-start gap-3'>
      <div className='w-7 h-7'>
        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
