@@ -15,7 +15,7 @@ export default function PanelMobileHeader({isOpen,closeSidebar}) {
       <div className='flex items-center w-full justify-start gap-2 mt-10'>
         <div className='rounded-full bg-slate-700 w-16 h-16'></div>
         <div className='flex items-start *:font-Kalame flex-col gap-1'>
-           <p className='text-black dark:text-white'>محسن سنگ سفیدی</p>
+           <p className='text-black dark:text-white'>سید عرفان قزی</p>
            <span className='rounded-md text-white px-1 bg-green-600'>مدیریت</span>
         </div>
       </div>
