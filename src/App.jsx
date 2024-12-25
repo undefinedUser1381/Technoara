@@ -5,7 +5,6 @@ import AuthProvider from "./context/AuthContext/AuthContext";
 
 function App() {
   const router = useRoutes(routes);
-
   const client = new QueryClient();
 
   return (
