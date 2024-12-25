@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import RightSection from './RightSection/RightSection'
 import LeftSection from './LeftSection/LeftSection'
 import PanelMobileHeader from './PanelMobileHeader/PanelMobileHeader'
@@ -6,7 +6,11 @@ import PanelMobileOverlay from './PanelMobileOverlay/PanelMobileOverlay'
 
 export default function PanelHeader() {
 
-  const [isOpenMobileSidebar , setIsOpenMobileSidebar] = useState(false );
+  const [isOpenMobileSidebar , setIsOpenMobileSidebar] = useState(false);
+
+  useEffect(() => {
+    setIsOpenMobileSidebar(false);
+  },[])
 
   const openMobileSidebar = () => {
     setIsOpenMobileSidebar(true);
