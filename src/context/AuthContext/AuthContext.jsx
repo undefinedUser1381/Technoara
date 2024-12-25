@@ -18,33 +18,13 @@ const AuthProvider = ({ children }) => {
   const [userInformation, setUserInformation] = useState(null);
 
   const login = (userData) => {
-    setIsLoggedin(true);
-    setToken(userData.data.data[0].access_token);
-    setUserInformation(userData.data.data[0]);
-    localStorage.setItem("token", userData.data.data[0].access_token);
+    //  code
   };
 
   const logout = () => {
-    console.log("Log out");
-    setIsLoggedin(false);
-    setToken(null);
-    localStorage.removeItem("token");
+    // code
   };
 
-  // useEffect(() => {
-  //   const token = localStorage.getItem("token");
-
-  //   if (token) {
-  //     alert("has token");
-  //     navigate("/");
-  //     apiReq
-  //       .get("/users/get-user", { headers: { 'Cookie' : `access_token=${token}` } })
-  //       .then((data) => {
-  //         setIsLoggedin(true)
-  //         console.log(data.data);
-  //       });
-  //   }
-  // }, []);
 
   return (
     <AuthContext.Provider
