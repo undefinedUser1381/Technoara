@@ -51,10 +51,10 @@ export default function PanelDashboard() {
         </div>
        </Panelboxes>
      </div>
-     <div className='p-5 mb-10 rounded-lg w-full dark:bg-[#1B2631] bg-white border dark:border-gray-600 border-gray-200 flex flex-col'>
+     <div className='mb-10 rounded-lg w-full dark:bg-[#1B2631] bg-white border dark:border-gray-600 border-gray-200 flex flex-col'>
       <PanelChart />
      </div>
-     <div className='flex flex-col-reverse lg:flex-row items-start mt-10 w-full mx-auto justify-center gap-4'>
+     <div className='flex flex-col-reverse h-full lg:h-[25rem] lg:flex-row items-start mt-10 w-full mx-auto justify-center gap-11 lg:gap-4'>
        <PanelCategoryChart />
        <PanelRecentOrders />
      </div>
