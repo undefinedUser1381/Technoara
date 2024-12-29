@@ -58,7 +58,7 @@ export default function PanelCategoryChart() {
   }, [])
 
   return (
-    <Card className="flex flex-col border h-[25rem] w-full lg:w-[50%] border-gray-200 dark:border-gray-600 bg-white dark:bg-[#1B2631]">
+    <Card className="flex flex-col border h-full w-full lg:w-[50%] border-gray-200 dark:border-gray-600 bg-white dark:bg-[#1B2631]">
       <CardHeader className='flex w-full flex-col bg-white dark:bg-[#1B2631] rounded-lg p-5 items-center gap-10'>
        <h4 className='font-Kalame w-full text-[1.1rem] border-b pb-4 dark:border-gray-600 relative text-black pr-8 dark:text-white'> نمودار دسته بندی ها
         <div className='bg-blue-600 w-5 h-5 rounded-full absolute top-1 right-0'></div>
