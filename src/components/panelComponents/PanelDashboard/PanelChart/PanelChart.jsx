@@ -1,19 +1,15 @@
-"use client"
+"use client";
 
-import { Area, AreaChart, XAxis, YAxis } from "recharts"
+import { Area, AreaChart, XAxis, YAxis } from "recharts";
 
-import {
-  Card,
-  CardContent,
-  CardHeader,
-} from "@/components/ui/card"
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
+} from "@/components/ui/chart";
 
-export const description = "An area chart with axes"
+export const description = "An area chart with axes";
 
 const chartData = [
   { month: "مهر", desktop: 186, mobile: 80 },
@@ -22,7 +18,7 @@ const chartData = [
   { month: "دی", desktop: 73, mobile: 190 },
   { month: "بهمن", desktop: 209, mobile: 130 },
   { month: "اسفند", desktop: 214, mobile: 140 },
-]
+];
 
 const chartConfig = {
   desktop: {
@@ -33,18 +29,18 @@ const chartConfig = {
     label: "فروش",
     color: "#00FF9C",
   },
-}
+};
 
 export default function Component() {
   return (
     <Card className="border-none font-Kalame">
       <CardHeader>
-      <div className="border-b pb-6 border-gray-300 dark:border-gray-600">
-        <div className="dark:text-white text-black text-[1.2rem] relative font-Kalame">
-          <p className="pr-8">نمودار فروش طی 7 روز گدشته</p>
-          <div className="bg-blue-500 w-5 h-5 rounded-full absolute top-2 right-0"></div>
+        <div className="border-b pb-6 border-gray-300 dark:border-gray-600">
+          <div className="dark:text-white text-black text-[1.2rem] relative font-Kalame">
+            <p className="pr-8">نمودار فروش طی 7 روز گدشته</p>
+            <div className="bg-blue-500 w-5 h-5 rounded-full absolute top-2 right-0"></div>
+          </div>
         </div>
-      </div>
       </CardHeader>
       <CardContent>
         <ChartContainer className="h-[20rem] w-full" config={chartConfig}>
@@ -70,7 +66,11 @@ export default function Component() {
               tickMargin={8}
               tickFormatter={(value) => value.slice(0, 5)}
             />
-            <ChartTooltip cursor={false} className="bg-black" content={<ChartTooltipContent />} />
+            <ChartTooltip
+              cursor={false}
+              className="dark:bg-[#111827] bg-[#F9FAFB] text-black dark:text-white"
+              content={<ChartTooltipContent />}
+            />
             <Area
               dataKey="mobile"
               type="natural"
@@ -91,5 +91,5 @@ export default function Component() {
         </ChartContainer>
       </CardContent>
     </Card>
-  )
+  );
 }
