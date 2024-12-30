@@ -66,11 +66,11 @@ const invoices = [
 
 export default function TableDemo() {
   return (
-    <div className="rounded-lg">
-      <Table className="overflow-scroll lg:overflow-hidden border dark:border-gray-600 rounded-2xl">
+    <div className="rounded-2xl border-2 dark:border-gray-600">
+      <Table className="overflow-scroll lg:overflow-hidden rounded-2xl">
         <TableHeader className="bg-white text-black dark:bg-[#1B2631] dark:text-white">
-          <TableRow className="font-Kalame text-[0.9rem] border-gray-300 dark:border-gray-600 *:p-4 lg:text-[1rem]">
-            <TableHead className="text-[1rem] w-[150px] text-right">ردیف</TableHead>
+          <TableRow className="font-Kalame text-[0.9rem] border-gray-300 dark:border-gray-700 *:p-4 lg:text-[1rem]">
+            <TableHead className="text-[1rem] w-[110px] text-center">ردیف</TableHead>
             <TableHead className="text-right">نام</TableHead>
             <TableHead className="text-right">شناسه</TableHead>
             <TableHead className="text-right">تاریخ</TableHead>
@@ -82,8 +82,8 @@ export default function TableDemo() {
         </TableHeader>
         <TableBody className="bg-white text-black font-Kalame text-right dark:bg-[#1B2631] dark:text-white">
           {invoices.map((invoice) => (
-            <TableRow className="border border-gray-300 dark:border-gray-600" key={invoice.invoice}>
-              <TableCell className="font-medium">{invoice.invoice}</TableCell>
+            <TableRow className="border border-gray-300 dark:border-gray-700" key={invoice.invoice}>
+              <TableCell className="font-medium text-center">{invoice.invoice}</TableCell>
               <TableCell className="text-right">
                 {invoice.paymentStatus}
               </TableCell>
@@ -93,12 +93,12 @@ export default function TableDemo() {
               </TableCell>
               <TableCell className="text-right">{invoice.price}</TableCell>
               <TableCell className="text-right">{invoice.user}</TableCell>
-              <TableCell className="text-right">
+              <TableCell className="text-right w-[120px]">
                 {
                     invoice.payWay === "نقدی" ? (
-                        <span className="font-bold bg-blue-500 text-blue-900 rounded-lg px-5">{invoice.payWay}</span>
+                        <span className="font-bold bg-blue-500 text-blue-900 rounded-lg px-4">{invoice.payWay}</span>
                     ) : (
-                        <span className="font-bold bg-green-500 text-green-900 rounded-lg px-5">{invoice.payWay}</span>
+                        <span className="font-bold bg-green-500 text-green-900 rounded-lg px-4">{invoice.payWay}</span>
                     )
                 }
               </TableCell>
