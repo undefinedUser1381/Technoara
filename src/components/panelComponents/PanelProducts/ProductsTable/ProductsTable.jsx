@@ -15,12 +15,13 @@ export default function ProductsTable() {
    ]
 
   return (
-   <Table className="overflow-scroll lg:overflow-hidden border dark:border-gray-600 rounded-2xl">
-    <TableHeader className="bg-white text-black dark:bg-[#1B2631] dark:text-white">
-      <TableRow className="font-Kalame text-[0.9rem] border-gray-300 dark:border-gray-600 *:p-4 lg:text-[1rem]">
-        <TableHead className="text-right">ردیف</TableHead>
+    <div className='rounded-2xl border dark:border-gray-700'>
+       <Table className="overflow-scroll lg:overflow-hidden rounded-2xl">
+       <TableHeader className="bg-white text-black dark:bg-[#1B2631] dark:text-white">
+      <TableRow className="font-Kalame text-[0.9rem] dark:border-gray-600 *:p-4 lg:text-[1rem]">
+        <TableHead className="text-center">ردیف</TableHead>
         <TableHead className="text-right">عنوان</TableHead>
-        <TableHead className="text-right">قیمت</TableHead>
+        <TableHead className="text-center">قیمت</TableHead>
         <TableHead className="text-right">دسته بندی</TableHead>
         <TableHead className="text-right">تخفیف</TableHead>
         <TableHead className="text-right">رایگان</TableHead>
@@ -30,10 +31,10 @@ export default function ProductsTable() {
     </TableHeader>
     <TableBody className="bg-white text-black font-Kalame text-right dark:bg-[#1B2631] dark:text-white">
       {product.map(item => (
-        <TableRow key={item.row} className="border font-Kalame border-gray-300 dark:border-gray-600">
+        <TableRow key={item.row} className="border text-center font-Kalame border-gray-300 dark:border-gray-600">
           <TableCell className="font-medium"><span className="text-black dark:text-white">{item.row}</span></TableCell>
-          <TableCell className="font-medium"><span className="text-black block w-[4rem] dark:text-white">{item.title}</span></TableCell>
-          <TableCell className="font-medium"><span className="text-black dark:text-white">{item.price}</span></TableCell>
+          <TableCell className="font-medium w-[130px]"><span className="text-black block text-right dark:text-white">{item.title}</span></TableCell>
+          <TableCell className="font-medium"><span className="text-black text-right dark:text-white">{item.price}</span></TableCell>
           <TableCell className="font-medium text-right w-[170px]"><div className='w-[6rem]'><span className="bg-green-800 text-white px-4 rounded-xl">{item.category}</span></div></TableCell>
           <TableCell className="font-medium text-right"> 
             {
@@ -88,5 +89,6 @@ export default function ProductsTable() {
        ))}
     </TableBody>
   </Table>
+    </div>
   )
 }
