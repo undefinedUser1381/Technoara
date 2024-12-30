@@ -72,6 +72,7 @@ export default function PanelCategoryChart() {
           <PieChart>
             <ChartTooltip
               cursor={false}
+              className="dark:bg-[#111827] bg-[#F9FAFB] text-black dark:text-white"
               content={<ChartTooltipContent hideLabel />}
             />
             <Pie
@@ -90,18 +91,19 @@ export default function PanelCategoryChart() {
                         y={viewBox.cy}
                         textAnchor="middle"
                         dominantBaseline="middle"
+                        className="dark:fill-gray-400 fill-gray-700 font-Kalame"
                       >
                         <tspan
+                          className="text-3xl fill-foreground font-bold"
                           x={viewBox.cx}
                           y={viewBox.cy}
-                          className="text-3xl fill-foreground font-Kalame font-bold"
                         >
                           {totalVisitors.toLocaleString()}
                         </tspan>
                         <tspan
                           x={viewBox.cx}
                           y={(viewBox.cy || 0) + 24}
-                          className="font-Kalame font-bold ill-muted-foreground text-white"
+                          className="font-Kalame font-bold ill-muted-foreground"
                         >
                           بازدید کننده
                         </tspan>
