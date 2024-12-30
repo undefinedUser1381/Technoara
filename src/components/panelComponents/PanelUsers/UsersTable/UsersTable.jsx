@@ -78,7 +78,7 @@ import { NavLink } from "react-router-dom";
          <Table className="overflow-scroll lg:overflow-hidden border dark:border-gray-600 rounded-2xl">
           <TableHeader className="bg-white text-black dark:bg-[#1B2631] dark:text-white">
             <TableRow className="font-Kalame text-[0.9rem] border-gray-300 dark:border-gray-600 *:p-4 lg:text-[1rem]">
-              <TableHead className="text-[1rem] w-[150px] text-right">
+              <TableHead className="text-[1rem] w-[120px] text-center">
                 ردیف
               </TableHead>
               <TableHead className="text-right">کاربر</TableHead>
@@ -90,7 +90,7 @@ import { NavLink } from "react-router-dom";
               <TableHead className="text-center">بیشتر</TableHead>
             </TableRow>
           </TableHeader>
-          <TableBody className="bg-white text-black font-Kalame text-right dark:bg-[#1B2631] dark:text-white">
+          <TableBody className="bg-white text-black font-Kalame text-center dark:bg-[#1B2631] dark:text-white">
             {invoices.map((invoice) => (
               <TableRow
                 className="border border-gray-300 dark:border-gray-600"
@@ -100,7 +100,7 @@ import { NavLink } from "react-router-dom";
                 <TableCell className="text-right">
                   {invoice.userName}
                 </TableCell>
-                <TableCell>{invoice.email}</TableCell>
+                <TableCell className="text-right">{invoice.email}</TableCell>
                 <TableCell className="text-right w-[170px]">
                   {invoice.phone}
                 </TableCell>
