@@ -99,8 +99,8 @@ export default function TicketsTable() {
 
   return (
    <TicketContext.Provider value={{isOpenModal,openTicketModal,closeTicketModal}}>
-      <div className="rounded-2xl border dark:border-gray-500 ">
-      <Table className="overflow-scroll lg:overflow-hidden rounded-2xl">
+      <div className="rounded-2xl border overflow-hidden dark:border-gray-500">
+      <Table className="overflow-scroll lg:overflow-hidden border dark:border-gray-700 rounded-2xl">
         <TableHeader className="bg-white text-black dark:bg-[#1B2631] dark:text-white">
           <TableRow className="font-Kalame text-[0.9rem] border-gray-300 dark:border-gray-700 *:p-4 lg:text-[1rem]">
             <TableHead className="text-[1rem] w-[120px] text-center">
