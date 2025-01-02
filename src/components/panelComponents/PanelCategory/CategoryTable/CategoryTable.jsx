@@ -68,25 +68,25 @@ export default function CategoryTable() {
     ]
 
   return (
-    <div className="rounded-lg">
-    <Table className="overflow-scroll lg:overflow-hidden border dark:border-gray-600 rounded-2xl">
+    <div className="border overflow-hidden dark:border-gray-500 rounded-2xl">
+    <Table className="overflow-scroll lg:overflow-hidden border dark:border-gray-800 rounded-2xl">
      <TableHeader className="bg-white text-black dark:bg-[#1B2631] dark:text-white">
        <TableRow className="font-Kalame text-[0.9rem] border-gray-300 dark:border-gray-600 *:p-4 lg:text-[1rem]">
-         <TableHead className="text-[1rem] w-[150px] text-right">
+         <TableHead className="text-[1rem] w-[100px] text-center">
            ردیف
          </TableHead>
-         <TableHead className="text-right">عنوان دسته بندی</TableHead>
-         <TableHead className="text-right">لاتین</TableHead>
-         <TableHead className="text-right">لینک</TableHead>
-         <TableHead className="text-right">تاریخ</TableHead>
-         <TableHead className="text-right">فعال</TableHead>
+         <TableHead className="text-center">عنوان دسته بندی</TableHead>
+         <TableHead className="text-center">لاتین</TableHead>
+         <TableHead className="text-center">لینک</TableHead>
+         <TableHead className="text-center">تاریخ</TableHead>
+         <TableHead className="text-center">فعال</TableHead>
          <TableHead className="text-center">بیشتر</TableHead>
        </TableRow>
      </TableHeader>
      <TableBody className="bg-white text-black font-Kalame text-right dark:bg-[#1B2631] dark:text-white">
        {invoices.map((invoice) => (
          <TableRow
-           className="border border-gray-300 dark:border-gray-600"
+           className="border border-gray-300 text-center dark:border-gray-600"
            key={invoice.row}
            >
            <TableCell className="font-medium">{invoice.row}</TableCell>
@@ -94,7 +94,7 @@ export default function CategoryTable() {
            <TableCell className="font-medium">{invoice.latinaTitle}</TableCell>
            <TableCell className="font-medium">{invoice.link}</TableCell>
            <TableCell className="font-medium">{invoice.date}</TableCell>
-           <TableCell className="w-[7rem]">
+           <TableCell className="w-[4rem] text-center">
             {invoice.active ? (
                 <div className='bg-green-600 flex items-center justify-center text-white rounded-full w-[2rem] p-1 h-8'>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
