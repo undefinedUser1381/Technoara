@@ -22,8 +22,8 @@ export default function NotifTable() {
   ];
 
   return (
-    <div>
-      <Table className="overflow-scroll lg:overflow-hidden border dark:border-gray-600 rounded-xl">
+    <div className="border dark:border-gray-500 rounded-xl">
+      <Table className="overflow-scroll lg:overflow-hidden border dark:border-gray-700 rounded-xl">
         <TableHeader className="bg-white text-black dark:bg-[#1B2631] dark:text-white">
           <TableRow className="font-Kalame text-[0.9rem] border-gray-300 dark:border-gray-600 *:p-4 lg:text-[1rem]">
             <TableHead className="text-right">ردیف</TableHead>
