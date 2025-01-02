@@ -8,12 +8,12 @@ export default function PanelDayFilter() {
         <span className="text-black dark:text-white">7 روز</span>
       </Link>
       <Link to={"?days=15"} className="font-Kalame p-2 px-5 rounded-xl bg-[#F9FAFB] cursor-pointer transition-all duration-200 dark:hover:bg-blue-500 hover:bg-blue-600 *:hover:text-white dark:bg-[#2C3D4F]">
-        <spa className="text-black dark:text-white" n>
+        <spa className="text-black dark:text-white">
           15 روز
         </spa>
       </Link>
       <Link to={"?days=30"} className="font-Kalame p-2 px-5 rounded-xl bg-[#F9FAFB] cursor-pointer transition-all duration-200 dark:hover:bg-blue-500 hover:bg-blue-600 *:hover:text-white dark:bg-[#2C3D4F]">
-        <spa className="text-black dark:text-white" n>
+        <spa className="text-black dark:text-white">
           30 روز
         </spa>
       </Link>
