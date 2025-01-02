@@ -1,14 +1,8 @@
 import React, { useContext } from "react";
 import { useState , memo } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "@/context/AuthContext/AuthContext";
-import Cookies from "js-cookie";
 
 const Header = memo(() => {
-
-  const auth = useContext(AuthContext);
-
-  console.log(auth.isLoggedIn);
 
   const [openMobileMenu,setOpenMobileMenu] = useState(false);
 
@@ -32,17 +26,9 @@ const Header = memo(() => {
         </div>
       </div>
       <div className="flex items-center justify-center gap-4 w-[19rem]">
-        {
-          auth.isLoggedIn === true ? (
-           <Link to={"dashboard/index"} className="w-[45%] font-YekanBakh bg-white rounded-lg shadow-lg p-3">
-             {/* {auth.userInformation.user_info.first_name} */}یسلسسل
-           </Link>
-          ) : (
-          <Link to={"register"} className="w-[45%] font-YekanBakh bg-white rounded-lg shadow-lg p-3">
+        <Link to={"register"} className="w-[45%] font-YekanBakh bg-white rounded-lg shadow-lg p-3">
              ورود / عضویت
-          </Link>
-          )
-        }
+        </Link>
         <button className="w-[45%] font-YekanBakh bg-primary shadow-md shadow-primary text-white rounded-md p-3">
           <span className="font-Kalame">سبد خرید <span>0</span></span>
         </button>
