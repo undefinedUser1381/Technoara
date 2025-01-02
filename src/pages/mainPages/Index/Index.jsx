@@ -21,7 +21,7 @@ export default function Index() {
 
   return (
     <>
-      <Header/>
+     <Header/>
       <main className='mt-10 px-1 w-full py-4'>
         <Banner/>
         <div className='flex flex-col xl:flex-row mt-10 items-start h-auto xl:h-[25.5rem] justify-between'>
