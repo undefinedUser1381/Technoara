@@ -29,21 +29,21 @@ export default function Register() {
 
    // حدف آن ارور ب دلیل وجود یک باگ ریز 
 
-  //  const { mutate : registerUser , isLoading} = useMutation ((dataObject) => {
-  //       return apiReq.post("/users/create-user/", dataObject).then(data => {
-  //          auth.login(data);
-  //          toast.success("حساب کاربری با موفقیت ساخته شد")
-  //          setTimeout(() => {
-  //            navigate("/")
-  //          }, 7000);
-  //       })
-  //   },
-  //   {
-  //   onError : (error) => {
-  //     toast.error(error.response.data.massage)
-  //    }
-  //  },
-  // )
+   const { mutate : registerUser , isLoading} = useMutation ((dataObject) => {
+        return apiReq.post("", dataObject).then(data => {
+           auth.login(data);
+           toast.success("حساب کاربری با موفقیت ساخته شد")
+           setTimeout(() => {
+             navigate("/")
+           }, 7000);
+        })
+    },
+    {
+    onError : (error) => {
+      toast.error(error.response.data.massage)
+     }
+   },
+  )
 
   const submitUser = (dataObject) => {
       registerUser(dataObject)
