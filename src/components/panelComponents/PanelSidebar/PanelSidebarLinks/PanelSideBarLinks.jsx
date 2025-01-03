@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 export default function PanelSideBarLinks() {
   return (
-    <ul className='flex flex-col items-start w-full'>
-    <NavLink className={"w-full"} to={"dashboard"}>
+    <ul className='flex child-hover:bg-gray-100 dark:child-hover:bg-[#2C3D4F66] dark:child-hover:text-[#2C3D4F66] child:rounded-lg child:transition-all child:duration-150 flex-col items-start w-full'>
+    <NavLink className="w-full" to={"dashboard"}>
      <li className='flex w-full p-3 *:text-[#2C3D4F] *:dark:text-white items-center justify-start gap-2'>
       <div className='w-6 h-6'>
        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full">
