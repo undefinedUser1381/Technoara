@@ -59,16 +59,12 @@ export default function PanelProducts() {
        <div className='mt-10'>
          <ProductsTable/>
        </div>
-       <div className='mt-9 bg-white dark:bg-[#1B2631] p-5 rounded-lg'>
+       <div className='mt-9 border-2 dark:border-gray-700 bg-white dark:bg-[#1B2631] p-5 rounded-lg'>
          <div className='flex items-center justify-between'>
-           <h4 className='font-Kalame w-full text-[1.1rem] relative text-black pr-8 dark:text-white'> فرم اضافه محصول
+           <h4 className='font-Kalame pb-5 w-full text-[1.1rem] relative text-black pr-8 dark:text-white'> فرم اضافه محصول
             <div className='bg-blue-600 w-5 h-5 rounded-full absolute top-1 right-0'></div>
            </h4>
          </div>
-         <div className='flex w-full mt-5 lg:mt-0 p-2 items-center justify-end'>
-              <span onClick={(e) => setFormStatus(e.target.innerHTML)} className='font-Kalame dark:text-white bg-blue-600 p-1 rounded-tr-xl rounded-br-xl py-2 cursor-pointer border-l-8 border-white dark:border-[#1B2631] px-3'>ادیت محصول</span>
-              <span onClick={(e) => setFormStatus(e.target.innerHTML)} className='font-Kalame dark:text-white bg-blue-600 p-1 rounded-tl-xl rounded-bl-xl px-3 py-2 cursor-pointer'>اضافه محصول</span>
-           </div>
          <ProductAddForm />
        </div>
      </div>
