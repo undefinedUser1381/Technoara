@@ -1,7 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link , useLocation} from 'react-router-dom'
 
 export default function TicketsFilter() {
+
+  // const [serachParams , setSearchParams] = useSearchParams();
+  // const searchedParam = serachParams.get("days");
+
   return (
     <>
      <div className="flex items-center self-end lg:self-auto justify-center bg-white border dark:bg-[#1B2631] p-3 rounded-lg dark:border-gray-600 gap-3">
