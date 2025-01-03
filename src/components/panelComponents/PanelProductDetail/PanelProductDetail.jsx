@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PagesTitle from "../PagesTitle/PagesTitle";
 import Panelboxes from "../PanelBoxes/Panelboxes";
-import ProductAddForm from "../PanelProducts/َProductAddForm/َProductAddForm";
+import PanelEditForm from "../PanelProducts/PanelEditForm/PAnelEditForm";
 
 export default function PanelProductDetail() {
   return (
@@ -60,11 +60,11 @@ export default function PanelProductDetail() {
         </div>
         <div className='mt-9 bg-white dark:bg-[#1B2631] p-5 rounded-lg'>
          <div className='flex items-center justify-between'>
-           <h4 className='font-Kalame w-full text-[1.1rem] relative text-black pr-8 dark:text-white'> فرم ویرایش و اضافه محصول
+           <h4 className='font-Kalame w-full text-[1.1rem] relative text-black pr-8 dark:text-white'> فرم ویرایش محصول
             <div className='bg-blue-600 w-5 h-5 rounded-full absolute top-1 right-0'></div>
            </h4>
          </div>
-         <ProductAddForm />
+         <PanelEditForm />
        </div>
       </div>
     </div>
