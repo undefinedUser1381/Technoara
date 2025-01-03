@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PagesTitle from "../PagesTitle/PagesTitle";
 import Panelboxes from "../PanelBoxes/Panelboxes";
-import ProductEdit from "../PanelProducts/ProductEdit/ProductEdit";
+import ProductAddForm from "../PanelProducts/َProductAddForm/َProductAddForm";
 
 export default function PanelProductDetail() {
   return (
@@ -64,7 +64,7 @@ export default function PanelProductDetail() {
             <div className='bg-blue-600 w-5 h-5 rounded-full absolute top-1 right-0'></div>
            </h4>
          </div>
-         <ProductEdit submit={"ادیت محصول"}/>
+         <ProductAddForm />
        </div>
       </div>
     </div>
