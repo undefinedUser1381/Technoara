@@ -6,13 +6,7 @@ import Panelboxes from '../PanelBoxes/Panelboxes'
 import TicketsTable from './TicketsTable/TicketsTable'
 
 export default function PanelTicket() {
- 
-  // const locationSearch = location.search
-  // const locationSearchStatus = new URLSearchParams(locationSearch);
-  // const status = locationSearchStatus.get("status");
-
-  // console.log(status);
-
+  
   return (
     <div className='w-[100%] min-h-screen bg-[#F9FAFB] p-0 lg:p-4 dark:bg-[#111827]'>
       <div className='mt-[7rem] w-full mr-auto lg:w-[80%] px-4 text-white'>
