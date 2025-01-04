@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import useDocumentTitle from '@/hooks/useDocumentTitle'
 
 export default function Error404() {
+
+  useDocumentTitle("تکنو آرا | خطای 404")
+
   return (
     <div className='bg-[#044EA3] flex items-center justify-center h-[100vh]'>
       <div className='flex flex-col items-center'>
