@@ -7,8 +7,10 @@ import CategoryBrands from "../../../components/allComponents/Category/CategoryB
 import ProductsWithDiscount from "../../../components/sharedComponents/ProductsWithDiscount/ProductsWithDiscount";
 import CategoryMobile from "../../../components/allComponents/Category/CategoryMobile/CategoryMobile";
 import CategoryMobileBtn from "../../../components/allComponents/Category/CategoryMobileBtn/CategoryMobileBtn";
+import useDocumentTitle from "@/hooks/useDocumentTitle";
 
 const Category = memo(() => {
+  useDocumentTitle("تکنو آرا | دسته بندی")
 
   const [btnStatus , setBtnStatus] = useState(false);
 
@@ -55,11 +57,11 @@ const Category = memo(() => {
                <div className="hidden lg:flex lg:items-center shadow-lg bg-white lg:p-5 rounded-lg lg:justify-between">
                 <div className="flex *:font-YekanBakh gap-5 items-center justify-start">
                  <span>انتخاب بر اساس : </span>
-                 <ul className="flex items-center *:transition-all *:duration-300 *:text-[#9AA3BD] *:cursor-pointer gap-8 justify-between">
-                 <li className="hover:text-secondary">ارزان ترین</li>
-                 <li className="hover:text-secondary">گران ترین</li>
-                 <li className="hover:text-secondary">رایگان</li>
-                 <li className="hover:text-secondary">غیر رایگان</li>
+                 <ul className="flex child-hover:text-secondary items-center *:transition-all *:duration-300 *:text-[#9AA3BD] *:cursor-pointer gap-8 justify-between">
+                 <li>ارزان ترین</li>
+                 <li>گران ترین</li>
+                 <li>رایگان</li>
+                 <li>غیر رایگان</li>
                  </ul>
                 </div>
                 <div className="w-6 h-6 cursor-pointer">
