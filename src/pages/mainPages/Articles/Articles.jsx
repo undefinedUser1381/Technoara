@@ -6,8 +6,12 @@ import RightBox from '../../../components/allComponents/Article/RightBox/RightBo
 import TitleBox from '../../../components/indexComponents/TitleBox/TitleBox.jsx'
 import ScrollProgress from '../../../components/allComponents/Article/ScrollProgress/ScrollProgress.jsx'
 import ArticleUserComment from '../../../components/allComponents/ArticleUserComment/ArticleUserComment.jsx'
+import useDocumentTitle from '@/hooks/useDocumentTitle.jsx'
 
 export default function Articles() {
+  useDocumentTitle("تکنوآرا | مقاله ها");
+
+
   return (
     <div className='bg-[#F8F9FB]'>
      <ScrollProgress/>
