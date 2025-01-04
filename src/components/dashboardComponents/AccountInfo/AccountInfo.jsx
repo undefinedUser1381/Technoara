@@ -1,6 +1,7 @@
 import React from 'react'
-
 export default function AccountInfo() {
+
+
   return (
     <div className='bg-white w-[100%] lg:w-[73%] p-5 shadow-sm rounded-lg'>
       <div className='flex items-center py-5 border-b text-[#021959] gap-4 justify-start'>
