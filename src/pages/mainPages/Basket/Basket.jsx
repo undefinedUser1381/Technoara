@@ -7,11 +7,22 @@ import LocationAddress from "../../../components/allComponents/Basket/LocationAd
 import OrderCompelete from "../../../components/allComponents/Basket/OrderCompelete/OrderCompelete";
 import EndOrder from "../../../components/allComponents/Basket/EndOrder/EndOrder";
 import dataContext from "@/context/dataContext/dataContext";
+import useDocumentTitle from '@/hooks/useDocumentTitle.jsx'
 
 export default function Basket() {
+  useDocumentTitle("تکنو آرا | سبد خرید")
 
   const [postStatus, setPostStatus] = useState("پست عادی");
   const [basketSteps, setBasketSteps] = useState(1);
+
+  // این بسکت برای اینه که بتونیم تمام ازلاعاتمون رو در سراسر استپ کامپوننتمون بتونیم داشته باشیم تا بتونیم جزییات فاکتور رو نشون بدیم
+  // و در نهایت با نشون دادن فاکنور و زدن دکمه خرید بتونیم آبجکت رو به بکند بفرستیم
+  const basketData = {
+     products : [],
+     postWay : postStatus ,
+     locationData : {name : "", family : "" , country : "" , city : "" , province : "" , street : ""},
+     moreInfos : {}
+  };
 
   const changeStep = (index) => {
     setBasketSteps(index);
@@ -28,7 +39,7 @@ export default function Basket() {
   return (
     <div className="bg-[#F8F9FB]">
       <Header />
-      <dataContext.Provider value={{changeStep , updatePostStatus , nextStep , postStatus}}>
+      <dataContext.Provider value={{changeStep , basketData , updatePostStatus , nextStep , postStatus}}>
         <OrderProgress step={basketSteps} />
 
         {basketSteps == 1 && <BasketDetails />}
