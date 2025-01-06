@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function AddressBox() {
+
+  console.log("adddress box");
+
   return (
     <div className='flex border items-start flex-col p-3 rounded-lg'>
        <div className='border-b pb-4 pt-2 flex text-[#021959] items-center w-full justify-start gap-3'>
