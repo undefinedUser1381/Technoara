@@ -10,6 +10,9 @@ import dataContext from "@/context/dataContext/dataContext";
 import useDocumentTitle from '@/hooks/useDocumentTitle.jsx'
 
 export default function Basket() {
+
+  console.log("Basket");
+
   useDocumentTitle("تکنو آرا | سبد خرید")
 
   const [postStatus, setPostStatus] = useState("پست عادی");
