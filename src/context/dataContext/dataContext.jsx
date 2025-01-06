@@ -5,6 +5,12 @@ const dataContext = createContext({
   nextStep: () => {},
   changeStep: () => {},
   updatePostStatus: () => {},
+  basketData : {
+    products : [],
+    postWay : "" ,
+    locationData : {},
+    moreInfos : {}
+  },
 });
 
 export default dataContext
