@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function AddNewAdress() {
+
+  console.log("add new");
+
+  const [state , setState] = useState("");
+
+  const changeHand = (e) => {
+      setState(e.target.value)
+  }
+
   return (
     <form className='flex flex-wrap mt-8 items-start gap-4'>
         <div className='flex font-Kalame flex-col gap-4 w-full sm:w-[48%] lg:w-[48%] xl:w-[32%]'>
           <label htmlFor="">نام</label>
-          <input type="text" className='bg-[#F8F9FB] p-2 rounded-lg' placeholder='نام'/>
+          <input value={state} type="text" onChange={(e) => changeHand(e)} className='bg-[#F8F9FB] p-2 rounded-lg' placeholder='نام'/>
         </div>
         <div className='flex font-Kalame flex-col gap-4 w-full sm:w-[48%] lg:w-[48%] xl:w-[32%]'>
           <label htmlFor="">نام خانوادگی</label>
