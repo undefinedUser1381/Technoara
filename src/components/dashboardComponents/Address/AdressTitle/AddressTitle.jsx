@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function AddressTitle() {
+
+  console.log("render address title");
+
   return (
    <div className='flex items-center border-b pb-6 pt-3 justify-between'>
     <div className='flex text-[#021959] items-center justify-start gap-3'>
